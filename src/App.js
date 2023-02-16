@@ -8,7 +8,11 @@ function App() {
     <div className="App">
       <input type="text" placeholder='Search...' />
       {Data.map((val, index) => {
-        return <div key={index}>{val.first_name}</div>
+        return(
+          <div className='user' key={index}>
+            <p>{val.first_name}</p>
+          </div>
+        )
       })}
     </div>
   );
